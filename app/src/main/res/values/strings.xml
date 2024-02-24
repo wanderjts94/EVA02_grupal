@@ -3,4 +3,10 @@
     <string name="btnregistro">REGISTRAR</string>
     <string name="btnFormulario">FORMULARIO</string>
     <string name="btnListado">LISTADO</string>
+    <string name="txtval01">1. Marque sus platos favoritos</string>
+    <string name="txtval02">2.¿Visitaste algun país de Europa, Asia \no Africa?</string>
+    <string name="txtval03">3.¿Hablas Inglés?</string>
+    <string name="txtval04">4.¿Te gusta la tecnologia?</string>
+    <string name="txtval05">5.¿Realizas trabajo remoto?</string>
+    <string name="btnvalue">Resolver</string>
 </resources>
