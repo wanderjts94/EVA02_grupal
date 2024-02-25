@@ -5,6 +5,7 @@ import android.content.SyncRequest
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.View
 import android.widget.CheckBox
 import pe.edu.idat.eva02_grupal.databinding.ActivityEjercicio02Binding
@@ -29,6 +30,7 @@ class Ejercicio02 : AppCompatActivity(), View.OnClickListener {
         binding.cbTallarines.setOnClickListener(this)
         binding.cbArrozChaufa.setOnClickListener(this)
         binding.cbOtros.setOnClickListener(this)
+        binding.btnRegresar2.setOnClickListener(this)
     }
 
     fun validarPlatillo(): Boolean {
@@ -89,6 +91,10 @@ class Ejercicio02 : AppCompatActivity(), View.OnClickListener {
                         }, 5000) // 5000 milisegundos = 5 segundos
                     }
                 }
+                R.id.btnRegresar2 -> {
+                    val intent = Intent(this,PaginaPrincipal::class.java)
+                    startActivity(intent)
+                }
             }
         }
     }
@@ -103,6 +109,7 @@ class Ejercicio02 : AppCompatActivity(), View.OnClickListener {
                     obtenerTecnologiaSeleccionado() + " " +
                     obtenerRemotoSeleccionado()
             ListaCuestionario.add(infoCuestionario.toString())
+            Log.i("Valores del Cuestionario",infoCuestionario)
             val mensaje = getString(R.string.mensajeRegistroCorrecto)
             AppMensaje.enviarmensaje(binding.root, mensaje, TipoMensaje.SUCCESSFULL)
             setearControles()
@@ -110,11 +117,19 @@ class Ejercicio02 : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun obtenerPlatillo(): String{
-        var platillos = ""
-        for (plat in ListaPlatillos){
-            platillos += "$plat -"
+        if (ListaPlatillos.isEmpty()) {
+            return "Platillos: []"
+        } else {
+            var platillos = "Platillos: ["
+            for ((index, plat) in ListaPlatillos.withIndex()) {
+                platillos += plat
+                if (index < ListaPlatillos.size - 1) {
+                    platillos += " - "
+                }
+            }
+            platillos += "]"
+            return platillos
         }
-        return platillos
     }
 
     private fun setearControles() {

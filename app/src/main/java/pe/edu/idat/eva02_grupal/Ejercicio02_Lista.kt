@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import pe.edu.idat.eva02_grupal.databinding.ActivityEjercicio02ListaBinding
 import android.R
+import android.content.Intent
+import android.view.View
 
-class Ejercicio02_Lista : AppCompatActivity() {
+class Ejercicio02_Lista : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityEjercicio02ListaBinding
 
@@ -20,5 +22,15 @@ class Ejercicio02_Lista : AppCompatActivity() {
             R.layout.simple_list_item_1,
             listaCuestionarios)
         binding.lvCuestionarios.adapter = adapter
+        binding.btnRegresar3.setOnClickListener(this)
+    }
+
+    override fun onClick(vista: View) {
+        when(vista.id){
+            pe.edu.idat.eva02_grupal.R.id.btnRegresar3 -> {
+                val intent = Intent(this,Ejercicio02::class.java)
+                startActivity(intent)
+            }
+        }
     }
 }

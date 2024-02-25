@@ -80,6 +80,7 @@ class Ejercicio01 : AppCompatActivity(), View.OnClickListener {
                     obtenercualidades()
             listaregistros.add(infopersona)
             Log.i("Valores de lista Registros", infopersona)
+            AppMensaje.enviarmensaje(binding.root, "Registro Exitoso", TipoMensaje.SUCCESSFULL)
             limpiarControles()
             Handler().postDelayed({
                 startActivity(Intent(applicationContext, ListadoActivity::class.java).apply {
@@ -153,7 +154,7 @@ class Ejercicio01 : AppCompatActivity(), View.OnClickListener {
     }
 
     fun validarCelular(celular: String): Boolean {
-        return celular.length >= 9
+        return celular.length == 9
     }
 
     fun validarEmail(email: String): Boolean {
