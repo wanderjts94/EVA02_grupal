@@ -47,6 +47,7 @@ HEAD
     <string name="rbvalno3">NO</string>
     <string name="rbvalsi4">SI</string>
     <string name="rbvalno4">NO</string>
+    <string name="mensajeRegistroCorrecto">Cuestionario Registrado Correctamente</string>
 
 
 </resources>
