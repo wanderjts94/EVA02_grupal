@@ -3,6 +3,10 @@
     <string name="btnregistro">REGISTRAR</string>
     <string name="btnFormulario">FORMULARIO</string>
     <string name="btnListado">LISTADO</string>
+<<<<<<< HEAD
+=======
+HEAD
+>>>>>>> 324e1277259dc21a1b6f0c516097f7a1d6a5ec27
     <string name="twtituloregis">INFORMACION</string>
     <string name="tvnombre">NOMBRE</string>
     <string name="tvAppll">Apellidos</string>
@@ -28,7 +32,30 @@
     <string name="txtval04">4.¿Te gusta la tecnologia?</string>
     <string name="txtval05">5.¿Realizas trabajo remoto?</string>
     <string name="btnvalue">Resolver</string>
+<<<<<<< HEAD
     <string name="tvtit">Listado de registros</string>
     <string name="btnvolv">VOLVER</string>
+=======
+HEAD
+    <string name="cbvalArrozP">Arroz con pollo</string>
+    <string name="cbvallomosaltado">Lomo Saltado</string>
+    <string name="cbvalajidegallina">Aji de gallina</string>
+    <string name="cbvaltallarines">Tallarines</string>
+    <string name="cbvalarrozchaufa">Arroz Chaufa</string>
+    <string name="cbvalotros" />
+    <string name="cbvalOtros">Otros\n</string>
+    <string name="cbvalOtro">Otros</string>
+    <string name="rbvalsi1">SI</string>
+    <string name="rbvalno1" />
+    <string name="rbvalNo1">NO</string>
+    <string name="rbvalsi2">SI</string>
+    <string name="rbvalno2">NO</string>
+    <string name="rbvalsi3">SI</string>
+    <string name="rbvalno3">NO</string>
+    <string name="rbvalsi4">SI</string>
+    <string name="rbvalno4">NO</string>
+    <string name="mensajeRegistroCorrecto">Cuestionario Registrado Correctamente</string>
+
+>>>>>>> 324e1277259dc21a1b6f0c516097f7a1d6a5ec27
 
 </resources>
