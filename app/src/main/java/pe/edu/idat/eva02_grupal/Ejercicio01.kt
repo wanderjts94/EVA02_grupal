@@ -7,6 +7,7 @@ import android.widget.CheckBox
 import pe.edu.idat.eva02_grupal.databinding.ActivityEjercicio01Binding
 import android.content.Intent
 import android.os.Handler
+import android.util.Log
 import pe.edu.idat.eva02_grupal.otros.AppMensaje
 import pe.edu.idat.eva02_grupal.otros.TipoMensaje
 import android.util.Patterns
@@ -17,7 +18,7 @@ import java.util.ArrayList
 class Ejercicio01 : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityEjercicio01Binding
     private val listacualidades = ArrayList<String>()
-    private val listaregistros= ArrayList<String>()
+    private val listaregistros = ArrayList<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityEjercicio01Binding.inflate(layoutInflater)
@@ -40,17 +41,18 @@ class Ejercicio01 : AppCompatActivity(), View.OnClickListener {
                         registrarregistros()
                     }
                 }
+
                 R.id.btnregresar1 -> {
-                // Redirect
-                val intent = Intent(this, PaginaPrincipal::class.java)
-                startActivity(intent)
+                    // Redirect
+                    val intent = Intent(this, PaginaPrincipal::class.java)
+                    startActivity(intent)
                 }
             }
         }
     }
 
     private fun agregarQuitarcualidades(vista: CheckBox) {
-        if(vista.isChecked) {
+        if (vista.isChecked) {
             when (vista.id) {
                 R.id.chbPruntual -> listacualidades.add(vista.text.toString())
                 R.id.chbresponsable -> listacualidades.add(vista.text.toString())
@@ -58,7 +60,7 @@ class Ejercicio01 : AppCompatActivity(), View.OnClickListener {
                 R.id.chbOTros -> listacualidades.add(vista.text.toString())
             }
         } else {
-            when(vista.id){
+            when (vista.id) {
                 R.id.chbPruntual -> listacualidades.remove(vista.text.toString())
                 R.id.chbresponsable -> listacualidades.remove(vista.text.toString())
                 R.id.chbRespetuoso -> listacualidades.remove(vista.text.toString())
@@ -77,6 +79,7 @@ class Ejercicio01 : AppCompatActivity(), View.OnClickListener {
                     obtenercarreraseleccionada() + " " +
                     obtenercualidades()
             listaregistros.add(infopersona)
+            Log.i("Valores de lista Registros", infopersona)
             limpiarControles()
             Handler().postDelayed({
                 startActivity(Intent(applicationContext, ListadoActivity::class.java).apply {
@@ -101,13 +104,22 @@ class Ejercicio01 : AppCompatActivity(), View.OnClickListener {
         return carrera
     }
 
-    private fun obtenercualidades():String{
-        var cualidades=""
-        for(cual in listacualidades){
-            cualidades+= "$cual -"
+    private fun obtenercualidades(): String {
+        if (listacualidades.isEmpty()) {
+            return "Cualidades: []"
+        } else {
+            var cualidades = "Cualidades: ["
+            for ((index, cual) in listacualidades.withIndex()) {
+                cualidades += cual
+                if (index < listacualidades.size - 1) {
+                    cualidades += " - "
+                }
+            }
+            cualidades += "]"
+            return cualidades
         }
-        return cualidades
     }
+
 
     private fun limpiarControles() {
         listacualidades.clear()
@@ -116,29 +128,32 @@ class Ejercicio01 : AppCompatActivity(), View.OnClickListener {
         binding.tvdni.setText("")
         binding.tvcelular.setText("")
         binding.tvemail.setText("")
-        binding.chbPruntual.isChecked=false
-        binding.chbresponsable.isChecked=false
-        binding.chbRespetuoso.isChecked=false
-        binding.chbOTros.isChecked=false
+        binding.chbPruntual.isChecked = false
+        binding.chbresponsable.isChecked = false
+        binding.chbRespetuoso.isChecked = false
+        binding.chbOTros.isChecked = false
         binding.rgcarreras.clearCheck()
-        binding.tvnombre.isFocusableInTouchMode=true
+        binding.tvnombre.isFocusableInTouchMode = true
         binding.tvnombre.requestFocus()
     }
 
-    fun validarcualidades():Boolean{
-        var respuesta=true
-        if(binding.chbPruntual.isChecked || binding.chbresponsable.isChecked || binding.chbRespetuoso.isChecked|| binding.chbOTros.isChecked){
-            respuesta=true
+    fun validarcualidades(): Boolean {
+        var respuesta = false
+        if (binding.chbPruntual.isChecked || binding.chbresponsable.isChecked ||
+            binding.chbRespetuoso.isChecked || binding.chbOTros.isChecked
+        ) {
+            respuesta = true
         }
         return respuesta
     }
+
 
     fun validarDNI(dni: String): Boolean {
         return dni.length == 8 && dni.matches("\\d+".toRegex())
     }
 
-    fun validarCorreo(correo: String): Boolean {
-        return Patterns.EMAIL_ADDRESS.matcher(correo).matches()
+    fun validarCelular(celular: String): Boolean {
+        return celular.length >= 9
     }
 
     fun validarEmail(email: String): Boolean {
@@ -150,19 +165,20 @@ class Ejercicio01 : AppCompatActivity(), View.OnClickListener {
         if (binding.rbAdmin.isChecked ||
             binding.rbIng.isChecked ||
             binding.rbCienMet.isChecked ||
-            binding.rbOtros.isChecked) {
+            binding.rbOtros.isChecked
+        ) {
             respuesta = true
         }
         return respuesta
     }
 
-    fun validarnombreapp():Boolean{
-        var respuesta=true
-        if(binding.tvnombre.text.toString().trim().isEmpty()){
+    fun validarnombreapp(): Boolean {
+        var respuesta = true
+        if (binding.tvnombre.text.toString().trim().isEmpty()) {
             binding.tvnombre.isFocusableInTouchMode = true
             binding.tvnombre.requestFocus()
-            respuesta=false
-        }else if(binding.tvapellido.text.toString().trim().isEmpty()) {
+            respuesta = false
+        } else if (binding.tvapellido.text.toString().trim().isEmpty()) {
             binding.tvapellido.isFocusableInTouchMode = true
             binding.tvapellido.requestFocus()
             respuesta = false
@@ -174,16 +190,16 @@ class Ejercicio01 : AppCompatActivity(), View.OnClickListener {
         var respuesta = false
         if (!validarnombreapp()) {
             AppMensaje.enviarmensaje(binding.root, "Ingrese Nombre y Apellido", TipoMensaje.ERROR)
-        }else if (!validarDNI(binding.tvdni.text.toString())) {
+        } else if (!validarDNI(binding.tvdni.text.toString())) {
             AppMensaje.enviarmensaje(binding.root, "DNI inválido", TipoMensaje.ERROR)
-        } else if (!validarCorreo(binding.tvemail.text.toString())) {
-            AppMensaje.enviarmensaje(binding.root, "Correo inválido", TipoMensaje.ERROR)
+        } else if (!validarCelular(binding.tvcelular.text.toString())) {
+            AppMensaje.enviarmensaje(binding.root, "Número de celular inválido", TipoMensaje.ERROR)
         } else if (!validarEmail(binding.tvemail.text.toString())) {
             AppMensaje.enviarmensaje(binding.root, "Email inválido", TipoMensaje.ERROR)
-        }  else if (!validarCarrera()) {
-            AppMensaje.enviarmensaje(binding.root, "seleccione  carrera", TipoMensaje.ERROR)
         } else if (!validarcualidades()) {
             AppMensaje.enviarmensaje(binding.root, "seleccione cualidades", TipoMensaje.ERROR)
+        } else if (!validarCarrera()) {
+            AppMensaje.enviarmensaje(binding.root, "seleccione  carrera", TipoMensaje.ERROR)
         } else {
             respuesta = true
         }

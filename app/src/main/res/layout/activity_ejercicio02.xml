@@ -1,238 +1,262 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Ejercicio02">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="50dp" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="50dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="CUESTIONARIO"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="50dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="100dp"
-        android:text="@string/txtval01"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <LinearLayout
-        android:id="@+id/lyPlatos"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
-
-        <CheckBox
-            android:id="@+id/cbArrozPollo"
-            android:layout_width="match_parent"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/cbvalArrozP" />
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="50dp" />
 
-        <CheckBox
-            android:id="@+id/cbLomoSaltado"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/cbvallomosaltado" />
+            android:layout_marginTop="16dp"
+            android:text="CUESTIONARIO"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <CheckBox
-            android:id="@+id/cbAjiGallina"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/cbvalajidegallina" />
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/txtval01"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <CheckBox
-            android:id="@+id/cbTallarines"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:id="@+id/lyPlatos"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/cbvaltallarines" />
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-        <CheckBox
-            android:id="@+id/cbArrozChaufa"
-            android:layout_width="match_parent"
+            <CheckBox
+                android:id="@+id/cbArrozPollo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbvalArrozP" />
+
+            <CheckBox
+                android:id="@+id/cbLomoSaltado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbvallomosaltado" />
+
+            <CheckBox
+                android:id="@+id/cbAjiGallina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbvalajidegallina" />
+
+            <CheckBox
+                android:id="@+id/cbTallarines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbvaltallarines" />
+
+            <CheckBox
+                android:id="@+id/cbArrozChaufa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbvalarrozchaufa" />
+
+            <CheckBox
+                android:id="@+id/cbOtros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbvalOtro" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/cbvalarrozchaufa" />
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/txtval02"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/lyPlatos" />
 
-        <CheckBox
-            android:id="@+id/cbOtros"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:id="@+id/rg02"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/cbvalOtro" />
-    </LinearLayout>
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
-        android:text="@string/txtval02"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/lyPlatos" />
+            <RadioButton
+                android:id="@+id/rbsi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rbvalsi1" />
 
-    <RadioGroup
-        android:id="@+id/rg02"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+            <RadioButton
+                android:id="@+id/rbno1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rbvalNo1" />
+        </RadioGroup>
 
-        <RadioButton
-            android:id="@+id/rbsi1"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/rbvalsi1" />
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="180dp"
+            android:text="@string/txtval03"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/rg02" />
 
-        <RadioButton
-            android:id="@+id/rbno1"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:id="@+id/rg03"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/rbvalNo1" />
-    </RadioGroup>
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="180dp"
-        android:text="@string/txtval03"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/rg02" />
+            <RadioButton
+                android:id="@+id/rbsi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rbvalsi2" />
 
-    <RadioGroup
-        android:id="@+id/rg03"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+            <RadioButton
+                android:id="@+id/rbno2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rbvalno2" />
+        </RadioGroup>
 
-        <RadioButton
-            android:id="@+id/rbsi2"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/rbvalsi2" />
+            android:layout_marginEnd="130dp"
+            android:text="@string/txtval04"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/rg03" />
 
-        <RadioButton
-            android:id="@+id/rbno2"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:id="@+id/rg04"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/rbvalno2" />
-    </RadioGroup>
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="130dp"
-        android:text="@string/txtval04"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/rg03" />
+            <RadioButton
+                android:id="@+id/rbsi3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rbvalsi3" />
 
-    <RadioGroup
-        android:id="@+id/rg04"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+            <RadioButton
+                android:id="@+id/rbno3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rbvalno3" />
+        </RadioGroup>
 
-        <RadioButton
-            android:id="@+id/rbsi3"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/rbvalsi3" />
+            android:layout_marginEnd="120dp"
+            android:text="@string/txtval05"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/rg04" />
 
-        <RadioButton
-            android:id="@+id/rbno3"
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:id="@+id/rg05"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/rbvalno3" />
-    </RadioGroup>
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
-        android:text="@string/txtval05"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/rg04" />
+            <RadioButton
+                android:id="@+id/rbsi4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rbvalsi4" />
 
-    <RadioGroup
-        android:id="@+id/rg05"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/textView6">
+            <RadioButton
+                android:id="@+id/rbno4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rbvalno4" />
+        </RadioGroup>
 
-        <RadioButton
-            android:id="@+id/rbsi4"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btnResolver"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/rbvalsi4" />
+            android:layout_marginTop="14dp"
+            android:background="@drawable/button_no_border"
+            android:text="@string/btnvalue"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/rg05" />
 
-        <RadioButton
-            android:id="@+id/rbno4"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btnRegresar2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/rbvalno4" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/btnResolver"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/btnvalue"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/rg05" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_no_border"
+            android:text="@string/btnregresar1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/btnResolver" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

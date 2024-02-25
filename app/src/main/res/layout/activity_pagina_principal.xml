@@ -20,34 +20,29 @@
         android:orientation="vertical"
         app:layout_constraintGuide_end="50dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="266dp"
-        android:layout_height="278dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_no_border"
         android:text="@string/btnregistro"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnFormulario"
         android:layout_width="0dp"
+        android:background="@drawable/button_no_border"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/btnFormulario"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/btnRegistrar" />
@@ -55,12 +50,25 @@
     <Button
         android:id="@+id/btnListar"
         android:layout_width="0dp"
+        android:background="@drawable/button_no_border"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/btnListado"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/btnFormulario" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="182dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_verified_user_24"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
