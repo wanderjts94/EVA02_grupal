@@ -227,11 +227,7 @@
     </RadioGroup>
 
     <Button
-<<<<<<< HEAD
-        android:id="@+id/btnacceder"
-=======
         android:id="@+id/btnResolver"
->>>>>>> 324e1277259dc21a1b6f0c516097f7a1d6a5ec27
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

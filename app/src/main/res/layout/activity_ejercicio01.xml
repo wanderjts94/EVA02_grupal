@@ -13,6 +13,41 @@
         android:layout_height="match_parent">
 
 
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <CheckBox
+                android:id="@+id/chbPruntual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chbpuntual" />
+
+            <CheckBox
+                android:id="@+id/chbresponsable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chbresponsabilidad" />
+
+            <CheckBox
+                android:id="@+id/chbRespetuoso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chbrespetuoso" />
+
+            <CheckBox
+                android:id="@+id/chbOTros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chbOTros" />
+        </LinearLayout>
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline3"
             android:layout_width="wrap_content"
@@ -147,46 +182,11 @@
                 android:text="@string/btnotro" />
         </RadioGroup>
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintStart_toStartOf="@+id/guideline4"
-            app:layout_constraintTop_toBottomOf="@+id/textView2">
-
-            <CheckBox
-                android:id="@+id/ckPuntual"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/ckpunt" />
-
-            <CheckBox
-                android:id="@+id/ckResp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/ckrepst" />
-
-            <CheckBox
-                android:id="@+id/ckResponsab"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/ckresponsabl" />
-
-            <CheckBox
-                android:id="@+id/ckotro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/ckotross" />
-        </LinearLayout>
-
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:text="@string/tvslecarrera"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/guideline4"

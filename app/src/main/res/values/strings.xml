@@ -3,10 +3,6 @@
     <string name="btnregistro">REGISTRAR</string>
     <string name="btnFormulario">FORMULARIO</string>
     <string name="btnListado">LISTADO</string>
-<<<<<<< HEAD
-=======
-HEAD
->>>>>>> 324e1277259dc21a1b6f0c516097f7a1d6a5ec27
     <string name="twtituloregis">INFORMACION</string>
     <string name="tvnombre">NOMBRE</string>
     <string name="tvAppll">Apellidos</string>
@@ -25,18 +21,14 @@ HEAD
     <string name="ckresponsabl">RESPONSABLE</string>
     <string name="ckotross">OTROS</string>
     <string name="btnregresar1">REGRESAR</string>
-
     <string name="txtval01">1. Marque sus platos favoritos</string>
     <string name="txtval02">2.¿Visitaste algun país de Europa, Asia \no Africa?</string>
     <string name="txtval03">3.¿Hablas Inglés?</string>
     <string name="txtval04">4.¿Te gusta la tecnologia?</string>
     <string name="txtval05">5.¿Realizas trabajo remoto?</string>
     <string name="btnvalue">Resolver</string>
-<<<<<<< HEAD
     <string name="tvtit">Listado de registros</string>
     <string name="btnvolv">VOLVER</string>
-=======
-HEAD
     <string name="cbvalArrozP">Arroz con pollo</string>
     <string name="cbvallomosaltado">Lomo Saltado</string>
     <string name="cbvalajidegallina">Aji de gallina</string>
@@ -55,7 +47,8 @@ HEAD
     <string name="rbvalsi4">SI</string>
     <string name="rbvalno4">NO</string>
     <string name="mensajeRegistroCorrecto">Cuestionario Registrado Correctamente</string>
-
->>>>>>> 324e1277259dc21a1b6f0c516097f7a1d6a5ec27
-
+    <string name="chbpuntual">PUNTUALIDAD</string>
+    <string name="chbresponsabilidad">RESPONSABILIDAD</string>
+    <string name="chbrespetuoso">RESPETUOSO</string>
+    <string name="chbOTros">OTROS</string>
 </resources>
