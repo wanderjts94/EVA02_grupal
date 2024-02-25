@@ -3,4 +3,22 @@
     <string name="btnregistro">REGISTRAR</string>
     <string name="btnFormulario">FORMULARIO</string>
     <string name="btnListado">LISTADO</string>
+    <string name="twtituloregis">INFORMACION</string>
+    <string name="tvnombre">NOMBRE</string>
+    <string name="tvAppll">Apellidos</string>
+    <string name="tvdni">DNI</string>
+    <string name="tvCelular">CELULAR</string>
+    <string name="tvEmail">EMAIL</string>
+    <string name="tvselecc">Seleccione sus cualidades:</string>
+    <string name="tvslecarrera">Seleccionar carrera a estudiar</string>
+    <string name="btnAcces">ACCEDER</string>
+    <string name="btningn">INGENERIA</string>
+    <string name="btncienMet">CIENCIAS MEDICAS</string>
+    <string name="btnadm">ADMINISTRACION</string>
+    <string name="btnotro">OTROS</string>
+    <string name="ckpunt">PUNTUAL</string>
+    <string name="ckrepst">RESPETUOSO</string>
+    <string name="ckresponsabl">RESPONSABLE</string>
+    <string name="ckotross">OTROS</string>
+    <string name="btnregresar1">REGRESAR</string>
 </resources>
