@@ -9,4 +9,21 @@
     <string name="txtval04">4.¿Te gusta la tecnologia?</string>
     <string name="txtval05">5.¿Realizas trabajo remoto?</string>
     <string name="btnvalue">Resolver</string>
+    <string name="cbvalArrozP">Arroz con pollo</string>
+    <string name="cbvallomosaltado">Lomo Saltado</string>
+    <string name="cbvalajidegallina">Aji de gallina</string>
+    <string name="cbvaltallarines">Tallarines</string>
+    <string name="cbvalarrozchaufa">Arroz Chaufa</string>
+    <string name="cbvalotros" />
+    <string name="cbvalOtros">Otros\n</string>
+    <string name="cbvalOtro">Otros</string>
+    <string name="rbvalsi1">SI</string>
+    <string name="rbvalno1" />
+    <string name="rbvalNo1">NO</string>
+    <string name="rbvalsi2">SI</string>
+    <string name="rbvalno2">NO</string>
+    <string name="rbvalsi3">SI</string>
+    <string name="rbvalno3">NO</string>
+    <string name="rbvalsi4">SI</string>
+    <string name="rbvalno4">NO</string>
 </resources>

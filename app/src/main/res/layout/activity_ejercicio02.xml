@@ -55,37 +55,37 @@
             android:id="@+id/cbArrozPollo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="@string/cbvalArrozP" />
 
         <CheckBox
             android:id="@+id/cbLomoSaltado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="@string/cbvallomosaltado" />
 
         <CheckBox
             android:id="@+id/cbAjiGallina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="@string/cbvalajidegallina" />
 
         <CheckBox
             android:id="@+id/cbTallarines"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="@string/cbvaltallarines" />
 
         <CheckBox
             android:id="@+id/cbArrozChaufa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="@string/cbvalarrozchaufa" />
 
         <CheckBox
             android:id="@+id/cbOtros"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="@string/cbvalOtro" />
     </LinearLayout>
 
     <TextView
@@ -113,14 +113,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/rbvalsi1" />
 
         <RadioButton
             android:id="@+id/rbno1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/rbvalNo1" />
     </RadioGroup>
 
     <TextView
@@ -148,14 +148,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/rbvalsi2" />
 
         <RadioButton
             android:id="@+id/rbno2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/rbvalno2" />
     </RadioGroup>
 
     <TextView
@@ -182,14 +182,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/rbvalsi3" />
 
         <RadioButton
             android:id="@+id/rbno3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/rbvalno3" />
     </RadioGroup>
 
     <TextView
@@ -216,18 +216,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/rbvalsi4" />
 
         <RadioButton
             android:id="@+id/rbno4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/rbvalno4" />
     </RadioGroup>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnResolver"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
