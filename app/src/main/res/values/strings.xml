@@ -3,12 +3,33 @@
     <string name="btnregistro">REGISTRAR</string>
     <string name="btnFormulario">FORMULARIO</string>
     <string name="btnListado">LISTADO</string>
+<<<<<<< HEAD
+    <string name="twtituloregis">INFORMACION</string>
+    <string name="tvnombre">NOMBRE</string>
+    <string name="tvAppll">Apellidos</string>
+    <string name="tvdni">DNI</string>
+    <string name="tvCelular">CELULAR</string>
+    <string name="tvEmail">EMAIL</string>
+    <string name="tvselecc">Seleccione sus cualidades:</string>
+    <string name="tvslecarrera">Seleccionar carrera a estudiar</string>
+    <string name="btnAcces">ACCEDER</string>
+    <string name="btningn">INGENERIA</string>
+    <string name="btncienMet">CIENCIAS MEDICAS</string>
+    <string name="btnadm">ADMINISTRACION</string>
+    <string name="btnotro">OTROS</string>
+    <string name="ckpunt">PUNTUAL</string>
+    <string name="ckrepst">RESPETUOSO</string>
+    <string name="ckresponsabl">RESPONSABLE</string>
+    <string name="ckotross">OTROS</string>
+    <string name="btnregresar1">REGRESAR</string>
+=======
     <string name="txtval01">1. Marque sus platos favoritos</string>
     <string name="txtval02">2.¿Visitaste algun país de Europa, Asia \no Africa?</string>
     <string name="txtval03">3.¿Hablas Inglés?</string>
     <string name="txtval04">4.¿Te gusta la tecnologia?</string>
     <string name="txtval05">5.¿Realizas trabajo remoto?</string>
     <string name="btnvalue">Resolver</string>
+<<<<<<< HEAD
     <string name="cbvalArrozP">Arroz con pollo</string>
     <string name="cbvallomosaltado">Lomo Saltado</string>
     <string name="cbvalajidegallina">Aji de gallina</string>
@@ -26,4 +47,7 @@
     <string name="rbvalno3">NO</string>
     <string name="rbvalsi4">SI</string>
     <string name="rbvalno4">NO</string>
+=======
+>>>>>>> 72b83248301487de99d2c88c34ec69c5b2184a18
+>>>>>>> 0b2d48a5cb5f5e37ff85827279a4e19675470e7d
 </resources>
