@@ -3,7 +3,6 @@
     <string name="btnregistro">REGISTRAR</string>
     <string name="btnFormulario">FORMULARIO</string>
     <string name="btnListado">LISTADO</string>
-<<<<<<< HEAD
     <string name="twtituloregis">INFORMACION</string>
     <string name="tvnombre">NOMBRE</string>
     <string name="tvAppll">Apellidos</string>
@@ -22,12 +21,14 @@
     <string name="ckresponsabl">RESPONSABLE</string>
     <string name="ckotross">OTROS</string>
     <string name="btnregresar1">REGRESAR</string>
-=======
+
     <string name="txtval01">1. Marque sus platos favoritos</string>
     <string name="txtval02">2.¿Visitaste algun país de Europa, Asia \no Africa?</string>
     <string name="txtval03">3.¿Hablas Inglés?</string>
     <string name="txtval04">4.¿Te gusta la tecnologia?</string>
     <string name="txtval05">5.¿Realizas trabajo remoto?</string>
     <string name="btnvalue">Resolver</string>
->>>>>>> 72b83248301487de99d2c88c34ec69c5b2184a18
+    <string name="tvtit">Listado de registros</string>
+    <string name="btnvolv">VOLVER</string>
+
 </resources>
