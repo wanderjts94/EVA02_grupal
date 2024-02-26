@@ -10,7 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#EDD3AC">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline3"
@@ -32,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="CUESTIONARIO"
+            android:textColor="#F80000"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
@@ -45,6 +47,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="100dp"
             android:text="@string/txtval01"
+            android:textColor="#F80505"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
@@ -104,6 +107,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="40dp"
             android:text="@string/txtval02"
+            android:textColor="#EA0606"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
@@ -140,6 +144,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="180dp"
             android:text="@string/txtval03"
+            android:textColor="#EF0B0B"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
@@ -175,6 +180,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="130dp"
             android:text="@string/txtval04"
+            android:textColor="#E80202"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
@@ -210,6 +216,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="120dp"
             android:text="@string/txtval05"
+            android:textColor="#ED0B0B"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"

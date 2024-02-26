@@ -10,7 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#F3CF9A">
 
 
         <LinearLayout
@@ -68,6 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/twtituloregis"
+            android:textColor="#BD0B0B"
             android:textSize="34sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
@@ -144,6 +146,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:text="@string/tvselecc"
+            android:textColor="#CF0707"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
             app:layout_constraintTop_toBottomOf="@+id/tvemail" />
@@ -188,6 +191,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/tvslecarrera"
+            android:textColor="#E10606"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
